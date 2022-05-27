@@ -18,5 +18,19 @@ for (let i = 0; i < arraysOfWords.length ; i++) {
 }
 
 //Write and argument for the parameter
-findLongestWord("This is my first JavaScript problem.")
+findLongestWord("This is my first JavaScript problem.");
 
+//Solution
+
+function findLongestWord(str) {
+	let longestWord = "";
+	let arraysOfWords = str.split(" ");
+	for (let i = 0; i < arraysOfWords.length ; i++) {
+	if (longestWord.length < arraysOfWords[i].length) {
+		longestWord = arraysOfWords[i];
+	} 	
+	}
+	return longestWord;
+}
+
+console.log(findLongestWord("This is my first JavaScript problem."));
