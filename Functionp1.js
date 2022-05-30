@@ -4,22 +4,21 @@
 // Write a function that accepts a string as a parameter
 function findLongestWord(str) {
 
-
-
 //Declare the variable for the longest word and array of words.
-let longestWord = "";
-let arraysOfWords = str.split(" ");
+	let longestWord = "";
+	let arraysOfWords = str.split(" ");
 
 //Write a for loop with a conditional statement. 
 for (let i = 0; i < arraysOfWords.length ; i++) {
 	if (longestWord.length < arraysOfWords[i].length) {
 		longestWord = arraysOfWords[i];
 	} 	
-}
+	}
+	return longestWord;
 }
 
-//Write and argument for the parameter
-findLongestWord("This is my first JavaScript problem.");
+//log the argument for the variable findLongestWord
+console.log(findLongestWord("This is my first JavaScript problem."));
 
 //Solution
 
